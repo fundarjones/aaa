@@ -2,6 +2,24 @@
 <head>
 </head>
 <body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'm.me/fundarjones',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+{
+  "whitelisted_domains":[
+    "<WHITELISTED_DOMAIN>",
+    "<WHITELISTED_DOMAIN>",
+    ...
+  ]
+}
 <div class="fb-send-to-messenger" 
   messenger_app_id="<m.me/fundarjones>" 
   page_id="https://www.facebook.com/fundarjones/" 
